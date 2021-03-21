@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const DDate= new Date().toLocaleDateString();
+const TTime= new Date().toLocaleTimeString();
 ReactDOM.render(
   <React.StrictMode>
     <App />
@@ -14,6 +16,9 @@ ReactDOM.render(
       <li>Kuch Kuch Hota Hay</li>
       <li>Bol</li>
     </ol>
+
+    <p>Current Date : {DDate}</p>
+    <p>Current Time : {TTime}</p>
   </React.StrictMode>,
   document.getElementById('root')
 );
