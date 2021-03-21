@@ -7,6 +7,13 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <ol>
+      <li>Titanic</li>
+      <li>3 Idiots</li>
+      <li>PK</li>
+      <li></li>
+      <li></li>
+    </ol>
   </React.StrictMode>,
   document.getElementById('root')
 );
