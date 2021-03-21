@@ -11,8 +11,8 @@ ReactDOM.render(
       <li>Titanic</li>
       <li>3 Idiots</li>
       <li>PK</li>
-      <li></li>
-      <li></li>
+      <li>Kuch Kuch Hota Hay</li>
+      <li>Bol</li>
     </ol>
   </React.StrictMode>,
   document.getElementById('root')
