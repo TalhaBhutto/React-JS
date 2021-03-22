@@ -27,11 +27,13 @@ ReactDOM.render(
     <p>Current Time : {TTime}</p>
     <hr></hr>
     <h1 contentEditable="true" className="heading">Hi my name is {name} and this is my image gallery</h1>
+    <div className="Img_Div">
     <a href="https://picsum.photos/"><img src={img1} /></a>
     <img src={img2} />
     <img src={img3} />
     <img src={img4} />
     <img src={img5} />
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
