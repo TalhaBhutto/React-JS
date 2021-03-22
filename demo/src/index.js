@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 const DDate= new Date().toLocaleDateString();
 const TTime= new Date().toLocaleTimeString();
+const name="Talha";
 ReactDOM.render(
   <React.StrictMode>
     <App />
@@ -19,6 +20,8 @@ ReactDOM.render(
 
     <p>Current Date : {DDate}</p>
     <p>Current Time : {TTime}</p>
+    <hr></hr>
+    <h1 contentEditable="true" >Hi my name is {name}</h1>
   </React.StrictMode>,
   document.getElementById('root')
 );
