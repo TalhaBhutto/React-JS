@@ -34,6 +34,7 @@ ReactDOM.render(
     <img src={img4} />
     <img src={img5} />
     </div>
+    <h1 style={{color:"blue",textAlign:"center"}}>Do you like it?</h1>
   </React.StrictMode>,
   document.getElementById('root')
 );
