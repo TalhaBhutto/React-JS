@@ -10,7 +10,7 @@ function Card(props){
                         A Netflix Original Series
                     </span>
                     <h3 className="card_title">{props.SName}</h3>
-                    <a href="" target="_blank">
+                    <a href={props.link} target="_blank">
                         <button>Watch Now</button>
                     </a>
                 </div>
