@@ -14,4 +14,9 @@ code {
 .card_img{
   width: 200px;
   height: 300px;
+  border-radius: 5%;
+  margin: 10px;
+}
+.card{
+  margin: 20px;
 }
