@@ -3,7 +3,7 @@ function Card(){
     return(
         <div className="cards">
             <div className="card">
-                <img src="" alt=" " className="card_img"/>
+                <img src="/images/CI1.jpg" alt=" " className="card_img"/>
                 <div className="card_info">
                     <span className="card_catagory">
                         A Netflix Original Series
