@@ -5,11 +5,9 @@ function card(){
                 <img src="" alt=" " className="card_img"/>
                 <div className="card_info">
                     <span className="card_catagory">
-                        Netflix Original Series
+                        A Netflix Original Series
                     </span>
-                    <h3 className="card_title">
-
-                    </h3>
+                    <h3 className="card_title">Dark</h3>
                     <a href="" target="_blank">
                         <button>Watch Now</button>
                     </a>
