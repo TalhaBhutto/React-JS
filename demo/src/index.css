@@ -20,6 +20,8 @@ code {
   text-transform: capitalize;
   font-weight: bold;
   text-shadow: 0px 2px 4px #ffe9c5;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 10px;
 }
 .Img_Div img{
   width: 200px;
