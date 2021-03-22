@@ -3,7 +3,7 @@ import Card from "./card";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Card imgsrc="/images/CI1.jpg" title="A Netflix Original Series" SName="Sacred Games" link="https://www.netflix.com/pk/title/80115328"/>
       <Card imgsrc="/images/CI2.jpg" title="An Amazon Prime Series" SName="Mirzapur" link="https://www.amazon.com/Mirzapur-Season-1/dp/B086VXR733"/>
       <Card imgsrc="/images/CI3.jpg" title="A Netflix Original Series" SName="Money Heist" link="https://www.netflix.com/pk/title/80192098"/>
