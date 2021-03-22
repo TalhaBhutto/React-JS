@@ -7,6 +7,11 @@ import reportWebVitals from './reportWebVitals';
 const DDate= new Date().toLocaleDateString();
 const TTime= new Date().toLocaleTimeString();
 const name="Talha";
+const img1="https://picsum.photos/200/300";
+const img2="https://picsum.photos/230/300";
+const img3="https://picsum.photos/255/300";
+const img4="https://picsum.photos/280/300";
+const img5="https://picsum.photos/300/300";
 ReactDOM.render(
   <React.StrictMode>
     <App />
@@ -21,7 +26,12 @@ ReactDOM.render(
     <p>Current Date : {DDate}</p>
     <p>Current Time : {TTime}</p>
     <hr></hr>
-    <h1 contentEditable="true" >Hi my name is {name}</h1>
+    <h1 contentEditable="true" >Hi my name is {name} and this is my image gallery</h1>
+    <a href="https://picsum.photos/"><img src={img1} /></a>
+    <img src={img2} />
+    <img src={img3} />
+    <img src={img4} />
+    <img src={img5} />
   </React.StrictMode>,
   document.getElementById('root')
 );
