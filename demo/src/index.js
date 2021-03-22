@@ -26,7 +26,7 @@ ReactDOM.render(
     <p>Current Date : {DDate}</p>
     <p>Current Time : {TTime}</p>
     <hr></hr>
-    <h1 contentEditable="true" >Hi my name is {name} and this is my image gallery</h1>
+    <h1 contentEditable="true" className="heading">Hi my name is {name} and this is my image gallery</h1>
     <a href="https://picsum.photos/"><img src={img1} /></a>
     <img src={img2} />
     <img src={img3} />
