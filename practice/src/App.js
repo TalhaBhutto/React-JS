@@ -1,14 +1,16 @@
 import './App.css';
 import Card from "./card";
+import S_data from "./S_data";
 
 function App() {
   return (
     <div>
-      <Card imgsrc="/images/CI1.jpg" title="A Netflix Original Series" SName="Sacred Games" link="https://www.netflix.com/pk/title/80115328"/>
-      <Card imgsrc="/images/CI2.jpg" title="An Amazon Prime Series" SName="Mirzapur" link="https://www.amazon.com/Mirzapur-Season-1/dp/B086VXR733"/>
-      <Card imgsrc="/images/CI3.jpg" title="A Netflix Original Series" SName="Money Heist" link="https://www.netflix.com/pk/title/80192098"/>
-      <Card imgsrc="/images/CI4.jpg" title="A Netflix Original Series" SName="Dark" link="https://www.netflix.com/pk/title/80100172"/>
-      <Card imgsrc="/images/CI5.jpg" title="A Netflix Original Series" SName="Ertugrul" link="https://www.netflix.com/pk/title/80127001"/>
+      <h1 className="heading_style">List of Top 5 Netflix Series in 2021</h1>
+      <Card imgsrc={S_data[0].imgsrc} title={S_data[0].title} SName={S_data[0].SName} link={S_data[0].link}/>
+      <Card imgsrc={S_data[1].imgsrc} title={S_data[1].title} SName={S_data[1].SName} link={S_data[1].link}/>
+      <Card imgsrc={S_data[2].imgsrc} title={S_data[2].title} SName={S_data[2].SName} link={S_data[2].link}/>
+      <Card imgsrc={S_data[3].imgsrc} title={S_data[3].title} SName={S_data[3].SName} link={S_data[3].link}/>
+      <Card imgsrc={S_data[4].imgsrc} title={S_data[4].title} SName={S_data[4].SName} link={S_data[4].link}/>
     </div>
   );
 }
