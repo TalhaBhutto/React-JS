@@ -1,5 +1,6 @@
 import './App.css';
 import Dinners from "./dinner";
+import React, {useState} from "react";
 
 const Education=[
   {I_name:"DASKBZ" ,Passing_Year:2015 , degree:"Matric Science" },
@@ -11,8 +12,18 @@ return `I have done my ${cval.degree} from ${cval.I_name} in ${cval.Passing_Year
 });
 console.log(data);
 function App() {
+  const state=useState();
+  const [count,setCount] =useState(0);
+
+  const IncNum=()=>{
+    setCount(count+1);
+    };  
+    
   return (
     <div className="App">
+      <div className="buttonz">
+    <h1>{count}</h1>
+    <button onClick={IncNum}>Click Me</button></div>
       <Dinners/>
       <h1>My Favourite 5 Movies</h1>
     </div>

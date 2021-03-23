@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
@@ -12,9 +12,6 @@ const img2="https://picsum.photos/230/300";
 const img3="https://picsum.photos/255/300";
 const img4="https://picsum.photos/280/300";
 const img5="https://picsum.photos/300/300";
-const IncNum=()=>{
-
-};
 ReactDOM.render(
   <React.StrictMode>
     <App />
@@ -38,9 +35,7 @@ ReactDOM.render(
     <img src={img5} />
     </div>
     <h1 style={{color:"blue",textAlign:"center"}}>Do you like it?</h1>
-    <div className="buttonz">
-    <h1{count}</h1>
-    <button onClick={IncNum}>Click Me</button></div>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
