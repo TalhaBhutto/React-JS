@@ -28,5 +28,10 @@ code {
   max-width: 240px;
   max-height: 500px;
   border-radius: 5%;
-  border: 3px 3px 3px 3px black;
+  border: 3px 3px 3px 30px black;
+  padding: 10px;
+
+}
+.card_info{
+  line-height: 5px;
 }
