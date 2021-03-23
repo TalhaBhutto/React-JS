@@ -15,13 +15,14 @@ code {
   width: 200px;
   height: 300px;
   border-radius: 5%;
-  margin: 10px;
+  margin: 2px 0px 10px 0px;
   display: flex;
   justify-content: center;
 }
 .card{
   margin: 10px 5px 50px 10px;
   text-align: center;
+  padding: 5px;
 }
 .cards{
   background-color:bisque;
@@ -29,8 +30,7 @@ code {
   max-height: 500px;
   border-radius: 5%;
   border: 3px 3px 3px 30px black;
-  padding: 10px;
-
+  box-shadow: 5px 10px black;
 }
 .card_info{
   line-height: 5px;
