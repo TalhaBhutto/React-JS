@@ -18,5 +18,6 @@ code {
   margin: 10px;
 }
 .card{
-  margin: 10px 5px 5px 10px;
+  margin: 10px 5px 50px 10px;
+  text-align: center;
 }
