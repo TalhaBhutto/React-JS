@@ -51,6 +51,8 @@ function App() {
     const UpdateName=(event)=>{
       event.preventDefault();
       SetMyFullName("Hello "+MyFirstName+" "+MySecondName);
+      MyNewFirstName("");
+      MyNewSecondName("");
     }
   return (
     <div className="App" style={{backgroundColor:bg}}>
@@ -62,8 +64,8 @@ function App() {
     <h1>{ctime2}</h1>
     <h1>{MyFullName}</h1>
     <form onSubmit={UpdateName}>
-    <input type="Text" placeholder="Enter First Name" onChange={GetFirstName}></input><br/>
-    <input type="Text" placeholder="Enter Last Name" onChange={GetSecondName}></input><br/>
+    <input type="Text" placeholder="Enter First Name" onChange={GetFirstName}/><br/>
+    <input type="Text" placeholder="Enter Last Name" onChange={GetSecondName}/><br/>
     <button type="submit">Click Me 👍</button>
     </form>
     </div>
