@@ -39,9 +39,13 @@ function App() {
       Nbg("#9b59b6");
       NewName("Click to Change Theme");
     }
-    [MyName,MyNName]=useState("Hello");
-    const GetTheName(event)=>{
-      MyNName(MyName+event.target.value);
+    const [MyName,MyNName]=useState("Hello");
+    const GetTheName=(event)=>{
+      MyNName("Hello, "+event.target.value);
+    }
+    const [MyFName,SetMyFName]=useState("Hello");
+    const UpdateName=()=>{
+       SetMyFName(MyName);
     }
   return (
     <div className="App" style={{backgroundColor:bg}}>
@@ -51,9 +55,9 @@ function App() {
     <h1>Click on this button to update time {ctime}</h1>
     <button onClick={Update_time}>Get Time</button>
     <h1>{ctime2}</h1>
-    <h1>{MyName}</h1>
-    <input type="Text" placeholder="Enter Your Name" onChange="GetTheName"></input>
-    <button>Click Me 👍</button>
+    <h1>{MyFName}</h1>
+    <input type="Text" placeholder="Enter Your Name" onChange={GetTheName}></input>
+    <button onClick={UpdateName}>Click Me 👍</button>
     </div>
     <div><button className="B2" onClick={bgChange} onDoubleClick={bgChange2}>{Bname}</button></div>
     
