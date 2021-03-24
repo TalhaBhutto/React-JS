@@ -54,6 +54,11 @@ function App() {
       MyNewFirstName("");
       MyNewSecondName("");
     }
+    const [Fl_N,N_Fl_N]=useState({fname:"",lname:""});
+    const U_Name=(event)=>{
+
+
+    };
   return (
     <div className="App" style={{backgroundColor:bg}}>
       <div className="buttonz">
@@ -69,9 +74,9 @@ function App() {
     <button type="submit">Click Me 👍</button>
     </form>
     <form>
-      <h1>{Fl_N}</h1><br/>
-      <input type="Text" placeholder="Enter Your Second Name"></input><br/>
-      <input type="Text" placeholder="Enter Your Second Name"></input><br/>
+      <h1>Hello {Fl_N.fname} {Fl_N.lname}</h1><br/>
+      <input type="Text" name="fname" placeholder="Enter Your Second Name" onChange={U_Name}></input><br/>
+      <input type="Text" name="lname" placeholder="Enter Your Second Name" onChange={U_Name}></input><br/>
     </form>
     </div>
     <div><button className="B2" onClick={bgChange} onDoubleClick={bgChange2}>{Bname}</button></div>
