@@ -49,7 +49,7 @@ button{
   border-radius: 5px;
   text-transform: uppercase;
   cursor: pointer;
-  /* border: 2px solid red; */
+  border: 2px solid white; 
 }
 button.B2{
   border: 2px solid red;

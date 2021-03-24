@@ -30,7 +30,7 @@ function App() {
     }
     setInterval(Update_time2,1000);
   return (
-    <div className="App" style={{backgroundColor:"#fff"}}>
+    <div className="App" style={{backgroundColor:"#9b59b6"}}>
       <div className="buttonz">
     <h1>{count}</h1>
     <button onClick={IncNum}>Click Me</button>
