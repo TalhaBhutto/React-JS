@@ -49,4 +49,8 @@ button{
   border-radius: 5px;
   text-transform: uppercase;
   cursor: pointer;
+  /* border: 2px solid red; */
+}
+.B2{
+  border: 2px solid red;
 }
