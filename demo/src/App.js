@@ -53,11 +53,14 @@ function App() {
     <h1>{count}</h1>
     <button onClick={IncNum}>Click Me</button>
     <h1>Click on this button to update time {ctime}</h1>
-    <button onClick={Update_time}>Get Time</button>
+    <button onClick={Update_time}>Get Time ⬆️</button>
     <h1>{ctime2}</h1>
     <h1>{MyFName}</h1>
+    <form>
+    <input type="Text" placeholder="Enter Your Name" onChange={GetTheName}></input>
     <input type="Text" placeholder="Enter Your Name" onChange={GetTheName}></input>
     <button onClick={UpdateName}>Click Me 👍</button>
+    </form>
     </div>
     <div><button className="B2" onClick={bgChange} onDoubleClick={bgChange2}>{Bname}</button></div>
     
