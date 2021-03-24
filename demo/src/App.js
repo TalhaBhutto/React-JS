@@ -29,14 +29,14 @@ function App() {
       setCtime2(time2);
     }
     setInterval(Update_time2,1000);
-    const [bg,Nbg]=useState("white");
+    const [bg,Nbg]=useState("#9b59b6");
     const [Bname,NewName]=useState("Click to Change Theme");
     const bgChange=()=>{
-      Nbg("#9b59b6");
+      Nbg("white");
       NewName("AB double Click bhi Krlo 😉");
     }
     const bgChange2=()=>{
-      Nbg("White");
+      Nbg("#9b59b6");
       NewName("Click to Change Theme");
     }
   return (
