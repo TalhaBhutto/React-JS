@@ -54,15 +54,17 @@ function App() {
       MyNewFirstName("");
       MyNewSecondName("");
     }
-    const [Fl_N,N_Fl_N]=useState({fname:"",lname:""});
+    const [Fl_N,N_Fl_N]=useState({fname:"",lname:"",email:"",number:""});
     const U_Name=(event)=>{
       let N=event.target.name;
       let V=event.target.value;
       N_Fl_N((pre)=>{
         if(N=="fname"){
          return{ 
-          fname:V,
-          lname:pre.lname};
+          fname:pre.fname,
+          lname:pre.lname,
+          email:pre.email,
+          number:pre.number}
         }
         else if(N=="lname"){
           return{fname:pre.fname,
@@ -88,10 +90,10 @@ function App() {
       <h1>Hello {Fl_N.fname} {Fl_N.lname}</h1><br/>
       <h1>{Fl_N.email}</h1>
       <h1>{Fl_N.number}</h1>
-      <input type="Text" name="fname" placeholder="Enter Your Second Name" value={Fl_N.fname}></input><br/>
-      <input type="Text" name="lname" placeholder="Enter Your Second Name" value={Fl_N.lname}></input><br/>
-      <input type="email" placeholder="Enter your email" value={Fl_N.email} name="email"/><br/>
-          <input type="number" placeholder="Enter your number" value={Fl_N.number} name="number" /><br/>    
+      <input type="Text" name="fname" onChange={U_Name} placeholder="Enter Your Second Name" value={Fl_N.fname}></input><br/>
+      <input type="Text" name="lname" onChange={U_Name} placeholder="Enter Your Second Name" value={Fl_N.lname}></input><br/>
+      <input type="email" onChange={U_Name} placeholder="Enter your email" value={Fl_N.email} name="email"/><br/>
+          <input type="number" onChange={U_Name} placeholder="Enter your number" value={Fl_N.number} name="number" /><br/>    
     </form>
     </div>
     <div><button className="B2" onClick={bgChange} onDoubleClick={bgChange2}>{Bname}</button></div>
