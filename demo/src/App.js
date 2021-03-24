@@ -86,11 +86,12 @@ function App() {
     </form>
     <form>
       <h1>Hello {Fl_N.fname} {Fl_N.lname}</h1><br/>
-      <input type="Text" name="fname" placeholder="Enter Your Second Name" onChange={U_Name}></input><br/>
-      <input type="Text" name="lname" placeholder="Enter Your Second Name" onChange={U_Name}></input><br/>
-      <input type="email" placeholder="Enter your email" onChange={GetFirstName}/><br/>
-    <input type="number" placeholder="Enter your number" onChange={GetSecondName}/><br/>
-    
+      <h1>{Fl_N.email}</h1>
+      <h1>{Fl_N.number}</h1>
+      <input type="Text" name="fname" placeholder="Enter Your Second Name" value={Fl_N.fname}></input><br/>
+      <input type="Text" name="lname" placeholder="Enter Your Second Name" value={Fl_N.lname}></input><br/>
+      <input type="email" placeholder="Enter your email" value={Fl_N.email}/><br/>
+          <input type="number" placeholder="Enter your number" value={Fl_N.number} /><br/>    
     </form>
     </div>
     <div><button className="B2" onClick={bgChange} onDoubleClick={bgChange2}>{Bname}</button></div>
