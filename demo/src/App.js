@@ -48,7 +48,8 @@ function App() {
       MyNewSecondName(event.target.value);
     }
     const [MyFullName,SetMyFullName]=useState("Hello");
-    const UpdateName=()=>{
+    const UpdateName=(event)=>{
+      event.preventDefault();
       SetMyFullName("Hello "+MyFirstName+" "+MySecondName);
     }
   return (
