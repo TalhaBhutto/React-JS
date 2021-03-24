@@ -68,6 +68,11 @@ function App() {
     <input type="Text" placeholder="Enter Last Name" onChange={GetSecondName}/><br/>
     <button type="submit">Click Me 👍</button>
     </form>
+    <form>
+      <h1>{Fl_N}</h1><br/>
+      <input type="Text" placeholder="Enter Your Second Name"></input><br/>
+      <input type="Text" placeholder="Enter Your Second Name"></input><br/>
+    </form>
     </div>
     <div><button className="B2" onClick={bgChange} onDoubleClick={bgChange2}>{Bname}</button></div>
     
