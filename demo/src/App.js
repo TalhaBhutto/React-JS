@@ -47,6 +47,8 @@ function App() {
     <h1>Click on this button to update time {ctime}</h1>
     <button onClick={Update_time}>Get Time</button>
     <h1>{ctime2}</h1>
+    <h1>Hello</h1>
+    <input type="Text" placeholder="Enter Your Name"></input>
     </div>
     <div><button className="B2" onClick={bgChange} onDoubleClick={bgChange2}>{Bname}</button></div>
     
