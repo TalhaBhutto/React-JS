@@ -20,18 +20,24 @@ function App() {
     };  
     let newTime=new Date().toLocaleTimeString();
     const [ctime,setCtime]=useState(newTime);
+    const [ctime2,setCtime2]=useState(newTime);
     const Update_time=()=>{
       setCtime(newTime);
     }
-    setInterval(Update_time,2000);
+    const Update_time2=()=>{
+      let time2=new Date().toLocaleTimeString();
+      setCtime2(time2);
+    }
+    setInterval(Update_time2,1000);
   return (
     <div className="App">
       <div className="buttonz">
     <h1>{count}</h1>
     <button onClick={IncNum}>Click Me</button>
-    <h1>{ctime}</h1>
+    <h1>Click on this button to update time {ctime}</h1>
     <button onClick={Update_time}>Get Time</button>
-    <h1>{ctime}</h1>
+    <h1>{ctime2}</h1>
+    <button>Click to Change Theme</button>
     </div>
       <Dinners/>
       <h1>My Favourite 5 Movies</h1>
