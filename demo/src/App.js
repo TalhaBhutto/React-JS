@@ -40,11 +40,11 @@ function App() {
       NewName("Click to Change Theme");
     }
     const [MyFirstName,MyNewFirstName]=useState("");
-    const GetTheName=(event)=>{
+    const GetFirstName=(event)=>{
       MyNewFirstName("Hello, "+event.target.value);
     }
     const [MySecondName,MyNewSecondName]=useState("");
-    const GetTheName=(event)=>{
+    const GetSecondName=(event)=>{
       MyNewSecondName(event.target.value);
     }
     const [MyFullName,SetMyFullName]=useState("Hello");
