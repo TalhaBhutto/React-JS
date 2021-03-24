@@ -56,8 +56,19 @@ function App() {
     }
     const [Fl_N,N_Fl_N]=useState({fname:"",lname:""});
     const U_Name=(event)=>{
-
-
+      let N=event.target.name;
+      let V=event.target.value;
+      N_Fl_N((pre)=>{
+        if(N=="fname"){
+         return{ 
+          fname:V,
+          lname:pre.lname};
+        }
+        else if(N=="lname"){
+          return{fname:pre.fname,
+          lname:V};
+        }
+      });
     };
   return (
     <div className="App" style={{backgroundColor:bg}}>
@@ -77,6 +88,9 @@ function App() {
       <h1>Hello {Fl_N.fname} {Fl_N.lname}</h1><br/>
       <input type="Text" name="fname" placeholder="Enter Your Second Name" onChange={U_Name}></input><br/>
       <input type="Text" name="lname" placeholder="Enter Your Second Name" onChange={U_Name}></input><br/>
+      <input type="email" placeholder="Enter your email" onChange={GetFirstName}/><br/>
+    <input type="number" placeholder="Enter your number" onChange={GetSecondName}/><br/>
+    
     </form>
     </div>
     <div><button className="B2" onClick={bgChange} onDoubleClick={bgChange2}>{Bname}</button></div>
