@@ -51,6 +51,6 @@ button{
   cursor: pointer;
   /* border: 2px solid red; */
 }
-.B2{
+button.B2{
   border: 2px solid red;
 }

@@ -30,15 +30,16 @@ function App() {
     }
     setInterval(Update_time2,1000);
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor:"#fff"}}>
       <div className="buttonz">
     <h1>{count}</h1>
     <button onClick={IncNum}>Click Me</button>
     <h1>Click on this button to update time {ctime}</h1>
     <button onClick={Update_time}>Get Time</button>
     <h1>{ctime2}</h1>
-    <button>Click to Change Theme</button>
     </div>
+    <div><button className="B2">Click to Change Theme</button></div>
+    
       <Dinners/>
       <h1>My Favourite 5 Movies</h1>
     </div>
