@@ -90,8 +90,8 @@ function App() {
       <h1>{Fl_N.number}</h1>
       <input type="Text" name="fname" placeholder="Enter Your Second Name" value={Fl_N.fname}></input><br/>
       <input type="Text" name="lname" placeholder="Enter Your Second Name" value={Fl_N.lname}></input><br/>
-      <input type="email" placeholder="Enter your email" value={Fl_N.email}/><br/>
-          <input type="number" placeholder="Enter your number" value={Fl_N.number} /><br/>    
+      <input type="email" placeholder="Enter your email" value={Fl_N.email} name="email"/><br/>
+          <input type="number" placeholder="Enter your number" value={Fl_N.number} name="number" /><br/>    
     </form>
     </div>
     <div><button className="B2" onClick={bgChange} onDoubleClick={bgChange2}>{Bname}</button></div>
