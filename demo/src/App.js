@@ -23,13 +23,16 @@ function App() {
     const Update_time=()=>{
       setCtime(newTime);
     }
+    setInterval(Update_time,2000);
   return (
     <div className="App">
       <div className="buttonz">
     <h1>{count}</h1>
     <button onClick={IncNum}>Click Me</button>
     <h1>{ctime}</h1>
-    <button onClick={Update_time}>Get Time</button></div>
+    <button onClick={Update_time}>Get Time</button>
+    <h1>{ctime}</h1>
+    </div>
       <Dinners/>
       <h1>My Favourite 5 Movies</h1>
     </div>
