@@ -29,8 +29,18 @@ function App() {
       setCtime2(time2);
     }
     setInterval(Update_time2,1000);
+    const [bg,Nbg]=useState("white");
+    const [Bname,NewName]=useState("Click to Change Theme");
+    const bgChange=()=>{
+      Nbg("#9b59b6");
+      NewName("AB double Click bhi Krlo 😉");
+    }
+    const bgChange2=()=>{
+      Nbg("White");
+      NewName("Click to Change Theme");
+    }
   return (
-    <div className="App" style={{backgroundColor:"#9b59b6"}}>
+    <div className="App" style={{backgroundColor:bg}}>
       <div className="buttonz">
     <h1>{count}</h1>
     <button onClick={IncNum}>Click Me</button>
@@ -38,7 +48,7 @@ function App() {
     <button onClick={Update_time}>Get Time</button>
     <h1>{ctime2}</h1>
     </div>
-    <div><button className="B2">Click to Change Theme</button></div>
+    <div><button className="B2" onClick={bgChange} onDoubleClick={bgChange2}>{Bname}</button></div>
     
       <Dinners/>
       <h1>My Favourite 5 Movies</h1>
