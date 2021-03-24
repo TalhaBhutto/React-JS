@@ -41,7 +41,7 @@ function App() {
     }
     const [MyFirstName,MyNewFirstName]=useState("");
     const GetFirstName=(event)=>{
-      MyNewFirstName("Hello, "+event.target.value);
+      MyNewFirstName(event.target.value);
     }
     const [MySecondName,MyNewSecondName]=useState("");
     const GetSecondName=(event)=>{
