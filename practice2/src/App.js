@@ -5,7 +5,7 @@ const App = ()=>{
   <div className="MainDiv">
     <div className="centerDiv">
       <br/>
-      <h1>ToDO List</h1>
+      <h1>ToDo List</h1>
       <br/>
       <input type="text" placeholder="Add Item"/>
       <button> + </button>
