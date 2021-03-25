@@ -6,7 +6,9 @@ const App = ()=>{
     SetInputList(event.target.value);
   }
   const ListOfItems=()=>{
-
+    SetItems((OItems)=>{
+      return [...OItems,inputList]
+    })
   }
   return(
   <div className="MainDiv">
@@ -17,7 +19,9 @@ const App = ()=>{
       <input type="text" placeholder="Add Item" onChange={itemEvents}/>
       <button onClick={ListOfItems}> + </button>
       <ol>
-        <li>{inputList}</li>
+        {items.map((itemV)=>{
+          return <li>{itemV}</li>
+        })}
       </ol>
     </div>
   </div>
