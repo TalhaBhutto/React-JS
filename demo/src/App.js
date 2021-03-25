@@ -61,15 +61,32 @@ function App() {
       N_Fl_N((pre)=>{
         if(N=="fname"){
          return{ 
-          fname:pre.fname,
+          fname:V,
           lname:pre.lname,
           email:pre.email,
           number:pre.number}
         }
         else if(N=="lname"){
-          return{fname:pre.fname,
-          lname:V};
-        }
+          return{ 
+           fname:pre.fname,
+           lname:V,
+           email:pre.email,
+           number:pre.number}
+         }
+         else if(N=="email"){
+          return{ 
+           fname:pre.fname,
+           lname:pre.lname,
+           email:V,
+           number:pre.number}
+         }
+         else if(N=="number"){
+          return{ 
+           fname:pre.fname,
+           lname:pre.lname,
+           email:pre.email,
+           number:V}
+         }
       });
     };
   return (
@@ -88,8 +105,8 @@ function App() {
     </form>
     <form>
       <h1>Hello {Fl_N.fname} {Fl_N.lname}</h1><br/>
-      <h1>{Fl_N.email}</h1>
-      <h1>{Fl_N.number}</h1>
+      <p>{Fl_N.email}</p>
+      <p>{Fl_N.number}</p>
       <input type="Text" name="fname" onChange={U_Name} placeholder="Enter Your Second Name" value={Fl_N.fname}></input><br/>
       <input type="Text" name="lname" onChange={U_Name} placeholder="Enter Your Second Name" value={Fl_N.lname}></input><br/>
       <input type="email" onChange={U_Name} placeholder="Enter your email" value={Fl_N.email} name="email"/><br/>
