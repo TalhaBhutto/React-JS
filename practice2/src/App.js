@@ -34,7 +34,7 @@ const App = ()=>{
   <div className="MainDiv">
     <div className="centerDiv">
       <br/>
-      <h1 className="heading">Expence Teacker</h1>
+      <h1 className="heading">Expense Teacker</h1>
       <br/>
       <h1 className="result">Total : {expence} RS</h1>
       <input type="text" placeholder="Add Item" onChange={itemEvents} value={inputList} />
