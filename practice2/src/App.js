@@ -12,6 +12,13 @@ const App = ()=>{
     });
     SetInputList("");
   }
+  const DeleteItems=(id)=>{
+      SetItems((OldItems)=>{
+        return OldItems.filter((arrElem,index)=>{
+          return index != id;
+        });
+      });  
+  };
   return(
   <div className="MainDiv">
     <div className="centerDiv">
@@ -21,8 +28,8 @@ const App = ()=>{
       <input type="text" placeholder="Add Item" onChange={itemEvents} value={inputList} />
       <button onClick={ListOfItems}> + </button>
       <ol>
-        {items.map((itemV)=>{
-          return <List text={itemV} />
+        {items.map((itemV,index)=>{
+          return <List text={itemV} key={index} id={index} onSelect={DeleteItems}/>
         })}
       </ol>
     </div>

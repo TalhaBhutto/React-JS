@@ -15,6 +15,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow: scroll;
 }
 .centerDiv{
   width: 25%;
@@ -74,7 +75,7 @@ ol li{
 .todo_style{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
 .todo_style .fa-times{
@@ -90,7 +91,7 @@ ol li{
   box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
 }
 .todo_style .fa-times:hover{
-  color: crimson;
+  background-color: crimson;
 }
 @media (max-width:768px){
   .centerDiv{
