@@ -4,7 +4,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
-      <button className="btn btn-success"><AccessibilityIcon/></button>
+      <button className="btn btn-primary"><AccessibilityIcon/></button>
     </div>
   );
 }
