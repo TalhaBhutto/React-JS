@@ -6,8 +6,13 @@ import Contact from "./Contact";
 function App() {
   return (
     <>
-      <About/>
-      <Contact/>
+
+      <Switch>
+        <Route path="/" component={About} />
+        <Route path ="/YehContactPageHay"
+      </Switch>
+      {/* <About/>
+      <Contact/> */}
     </>
   );
 }
