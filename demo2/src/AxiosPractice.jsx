@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const Axios=()=>{
-    let display=false
+    var display=false
     const [num,SetNum]=useState("nothing");
     const [name,SetName]=useState();
     const [moves,SetMoves]=useState();
@@ -11,14 +11,14 @@ const Axios=()=>{
         async function getD(){
             const res=await axios.get(`https://pokeapi.co/api/v2/pokemo/${num}`);
             SetName(res.data.name);
-            SetMoves(res.data.length);
+            SetMoves(res.data.moves.length);
         }
         getD();    
     });   
 return (<>
 <h1>You have choosen <span style={{color:"red"}}>{num}.</span></h1>
 {
-    if(display)
+    display?<><h1>This is <span style={{color:"red"}}>{name}.</span></h1><h1>{name} has <span style={{color:"red"}}>{moves}.</span> moves.</h1></>:<h1>No info</h1>
 }
 <select style={{marginBottom:"200px",marginLeft:"30px"}} value={num} onChange={(event)=>{SetNum(event.currentTarget.value)}}>
     <option value="1">1</option>
