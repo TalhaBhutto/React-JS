@@ -17,7 +17,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={About} />
         <Route exact path="/Contact" component={Contact}/>
-        <Route exact path="/YehContactPageHay/TwitterID" component={Twitter}/>
+        <Route exact path="/Contact/Twitter" component={Twitter}/>
         <Route component={Error}/>
       </Switch>
       {/* <About/>
