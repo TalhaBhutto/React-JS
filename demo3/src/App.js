@@ -11,7 +11,7 @@ function App() {
   };
   return (
     <>
-      
+      <Menu></Menu>
       <Switch>
         <Route exact path="/" component={About} />
         <Route exact path="/YehContactPageHay" component={Contact}/>
