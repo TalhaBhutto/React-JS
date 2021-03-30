@@ -17,6 +17,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={About} />
         <Route exact path="/Contact" component={Contact}/>
+        <Route exact path="/User" component={User}/>
         <Route exact path="/Contact/Twitter" component={Twitter}/>
         <Route component={Error}/>
       </Switch>
