@@ -17,7 +17,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={About} />
         <Route exact path="/Contact" component={Contact}/>
-        <Route exact path="/User/:name" component={User}/>
+        <Route exact path="/User/:fname/:lname" component={User}/>
         <Route exact path="/Contact/Twitter" component={Twitter}/>
         <Route component={Error}/>
       </Switch>

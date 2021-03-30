@@ -1,5 +1,5 @@
 import React from "react";
-import {useParams} from "react-router-dom";
+import {useParams,useLocation} from "react-router-dom";
 
 // const User=({match})=>{
 //     return (<>
@@ -7,9 +7,10 @@ import {useParams} from "react-router-dom";
 //     </>);
 // }
 const User=()=>{
-    const fname=useParams();
+    const {fname,lname}=useParams();
+    const location = useLocation();
     return (<>
-    <h1>Hello dear {fname} user.</h1>
+    <h1>Hello dear {fname} {lname}</h1>
     </>);
 }
 
