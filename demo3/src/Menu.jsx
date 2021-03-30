@@ -5,8 +5,8 @@ const Menu=()=>{
 
     return(<>
     <NavLink exact activeClassName="active_class" to="/"> ABout Us</NavLink>
-    <NavLink exact activeClassName="active_class" to="/YehContactPageHay">Contact</NavLink>
-    <NavLink exact activeClassName="active_class" to="/YehContactPageHay/TwitterID">Twitter</NavLink>
+    <NavLink exact activeClassName="active_class" to="/Contact">Contact</NavLink>
+    <NavLink exact activeClassName="active_class" to="/Contact/Twitter">Twitter</NavLink>
     </>);
 }
 export default Menu;
