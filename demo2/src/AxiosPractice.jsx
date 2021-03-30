@@ -3,11 +3,15 @@ import axios from "axios";
 
 const Axios=()=>{
     const [num,SetNum]=useState("nothing");
+    const [name,SetName]=useState();
+    const [moves,SetMoves]=useState();
+    const []=useState();
      useEffect(()=>{
         async function getD(){
             const res=await axios.get(`https://pokeapi.co/api/v2/pokemo/${num}`);
         }    
-    });   
+    });
+    getD();   
 return (<>
 <h1>You have choosen {num}.</h1>
 <select style={{marginBottom:"200px",marginLeft:"30px"}} value={num} onChange={(event)=>{SetNum(event.currentTarget.value)}}>
