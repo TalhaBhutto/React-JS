@@ -1,11 +1,11 @@
-import React, {  useState } from "react";
+import React, { useEffect, useState } from "react";
 // import axios from "axios";
 
 const Axios=()=>{
     const [num,SetNum]=useState("nothing");
-    // useEffect(()=>{
-        
-    // });   
+     useEffect(()=>{
+        alert("Welcome TO My Website");   
+     });   
 return (<>
 <h1>You have choosen {num}.</h1>
 <select style={{marginBottom:"200px",marginLeft:"30px"}} value={num} onChange={(event)=>{SetNum(event.currentTarget.value)}}>
