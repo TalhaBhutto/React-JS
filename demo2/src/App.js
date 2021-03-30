@@ -8,8 +8,10 @@ function App() {
   return (
     <>
         <Axios></Axios>
+        
         <Effect></Effect>
         <BS_Cards></BS_Cards>
+        
     </>
   );
 }
