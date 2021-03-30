@@ -4,7 +4,7 @@ import axios from "axios";
 const Axios=()=>{
     const [num,SetNum]=useState("nothing");
     useEffect(()=>{
-        alert("HI");
+        
     });
 return (<>
 <h1>You have choosen {num}.</h1>
