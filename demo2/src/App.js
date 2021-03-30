@@ -8,6 +8,7 @@ function App() {
 
   return (
     <>
+        <Effect></Effect>
         <BS_Cards></BS_Cards>
     </>
   );
