@@ -11,6 +11,10 @@ const User=()=>{
     const location = useLocation();
     return (<>
     <h1>Hello dear {fname} {lname}</h1>
+    <p>My current location is {location.pathname}</p>
+    {
+        location.pathname===`/User/Talha/Hussain`?<button onClick={alert("You are awesome")}>Click Me</button>:null
+    }
     </>);
 }
 
