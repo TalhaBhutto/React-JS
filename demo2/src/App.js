@@ -37,6 +37,12 @@ function App() {
 </div></div>
   </div>
 </div>
+
+<br/>
+<br/>
+<br/>
+<button onClick={SetNum(num+1)}>Click Me {num}</button>
+
     </div>
   );
 }
