@@ -5,9 +5,10 @@ import Contact from "./Contact";
 
 function App() {
   return (
-    <div>
-      
-    </div>
+    <>
+      <About/>
+      <Contact/>
+    </>
   );
 }
 
