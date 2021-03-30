@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 const Axios=()=>{
+    const [num,SetNum]=useState("nothing");
+    useEffect(()=>{
+        alert("HI");
+    });
 return (<>
-<select name="Select Pokemon" id="1" style={{marginBottom:"200px",marginLeft:"30px"}}>
+<h1>You have choosen {num}.</h1>
+<select style={{marginBottom:"200px",marginLeft:"30px"}} value={num} onChange={(event)=>{SetNum(event.currentTarget.value)}}>
     <option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
