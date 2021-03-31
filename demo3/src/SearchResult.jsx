@@ -2,10 +2,10 @@ import React from "react";
 import {useParams,useLocation,useHistory} from "react-router-dom";
 
 
-const Search=()=>{
+const SearchResult=()=>{
   return(<>
   
   </>);  
 }
 
-export default Search;
+export default SearchResult;
