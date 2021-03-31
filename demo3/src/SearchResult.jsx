@@ -3,8 +3,10 @@ import {useParams,useLocation,useHistory} from "react-router-dom";
 
 
 const SearchResult=()=>{
-  return(<>
+    const ISource="https://source.unsplash.com/user/erondu/1600x900";
   
+  return(<>
+  <img src={ISource}/>
   </>);  
 }
 
