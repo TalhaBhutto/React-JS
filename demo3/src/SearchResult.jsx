@@ -1,12 +1,10 @@
 import React from "react";
-import {useParams,useLocation,useHistory} from "react-router-dom";
 
 
 const SearchResult=()=>{
-    const ISource="https://source.unsplash.com/user/erondu/1600x900";
-  
+    const ISource="https://source.unsplash.com/user/erondu/600x400";
   return(<>
-  <img src={ISource}/>
+  <img src={ISource} style={{margin:"70px 0px 0px 300px"}}/>
   </>);  
 }
 
