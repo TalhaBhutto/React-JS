@@ -9,8 +9,8 @@ const Search=()=>{
         NewImage(data);
     }
   return(<>
-  <div style={{color:"red"}}>
-  <input type="text" onChange={InputEvent} value={image} placeholder="Search ANything"></input>
+  <div style={{color:"red", margin:"20px 0px 0px 400px"}}>
+        <input type="text" onChange={InputEvent} value={image} placeholder="Search Anything"/>
   </div>
   </>);  
 }
