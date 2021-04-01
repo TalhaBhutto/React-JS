@@ -13,7 +13,7 @@ const Search=()=>{
   <div style={{color:"red", margin:"20px 0px 0px 400px"}}>
         <input type="text" onChange={InputEvent} value={image} placeholder="Search Anything"/>
   </div>
-  {image===""?<SearchResult name={image}/>:null}
+  {image===""?null:<SearchResult name={image}/>}
   </>);  
 }
 
