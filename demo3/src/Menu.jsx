@@ -10,5 +10,6 @@ const Menu=()=>{
     <NavLink exact activeClassName="active_class" to="/Contact/Twitter">Twitter</NavLink>
     <NavLink exact activeClassName="active_class" to="/User/Talha/Bhutto">User</NavLink>
     </>);
+    
 }
 export default Menu;
